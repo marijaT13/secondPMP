@@ -1,0 +1,15 @@
+автомобил,car
+книга,book
+дом,house
+љубов,love
+песна,song
+јаболко,apple
+компјутер,computer
+планина,mountain
+пример,sample
+утро,morning
+здраво,hello
+пантолони,trousers
+татко,father
+маса,desk
+столица,chair

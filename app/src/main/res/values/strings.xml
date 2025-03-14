@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">secondPMP</string>
+    <string name="appl_name">Моја апликација</string>
+    <string name="search">Пребарувај</string>
+    <string name="save">Зачувај</string>
+    <string name="clear">Избриши</string>
+    <string name="enter_word">Внеси збор</string>
+    <string name="new_translation">Нов превод</string>
+    <string name="result">Резултат</string>
+</resources>
