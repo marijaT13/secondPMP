@@ -7,4 +7,6 @@
     <string name="enter_word">Внеси збор</string>
     <string name="new_translation">Нов превод</string>
     <string name="result">Резултат</string>
+    <string name="scroll_view_desc">Translation results</string>
+
 </resources>

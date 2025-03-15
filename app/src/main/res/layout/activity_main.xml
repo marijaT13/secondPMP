@@ -4,79 +4,80 @@
     android:layout_height="match_parent"
     android:background="#FFAAC8"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:paddingTop="100dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="10dp"
+        android:padding="10dp"
         android:text="@string/appl_name"
         android:textSize="18sp"
         android:textStyle="bold" />
-
     <SearchView
         android:id="@+id/searchInput"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@android:drawable/editbox_background"
-        android:hint="@string/enter_word"
-        android:inputType="text"
-        android:visibility="visible" />
+        android:queryHint="@string/enter_word"
+        android:iconifiedByDefault="false" />
 
-    <Button
-        android:id="@+id/searchButton"
-        android:layout_width="match_parent"
-        android:layout_height="37dp"
-        android:layout_marginTop="10dp"
-        android:background="#6D0200"
-        android:text="@string/search"
-        android:textColor="#FFFFFF" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:padding="4dp"
         android:orientation="horizontal">
 
         <EditText
             android:id="@+id/tagInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
             android:layout_weight="1"
-            android:hint="@string/new_translation" />
+            android:hint="@string/new_translation"/>
 
         <Button
             android:id="@+id/saveButton"
-            android:layout_width="wrap_content"
+            android:layout_width="106dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="#6D0200"
+            android:backgroundTint="#710200"
             android:text="@string/save"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"/>
+
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:text="@string/result"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <ListView
+    <LinearLayout
         android:id="@+id/listItems"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:divider="#6D0200"
-        android:dividerHeight="1dp" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/result"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonClear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="#6D0200"
+        android:backgroundTint="#710200"
         android:text="@string/clear"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"/>
+
 </LinearLayout>
